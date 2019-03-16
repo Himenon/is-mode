@@ -1,10 +1,10 @@
 {
   "name": "is-mode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides branching using query parameters.",
   "keywords": [
-    "query parameter",
-    "balancing"
+    "balancing",
+    "query parameter"
   ],
   "homepage": "https://github.com/is-mode#readme",
   "bugs": {
