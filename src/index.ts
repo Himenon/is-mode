@@ -1,3 +1,5 @@
+const SearchParams = require("@ungap/url-search-params");
+
 export interface SetupParams {
   browseWindow?: Window;
   modeKey?: string;
@@ -24,6 +26,6 @@ export const isMode = (mode: string): boolean => {
   if (!browseWindow) {
     return false;
   }
-  const params = new URLSearchParams(browseWindow.location.search);
+  const params = new SearchParams(browseWindow.location.search);
   return params.get(modeKey) === mode;
 };

@@ -39,10 +39,20 @@ describe("mode", () => {
     expect(isMode("b")).toBe(true);
   });
 
-  it("not browser", () => {
+  it("Not browser", () => {
     const { window: browseWindow } = new JSDOM("");
     delete browseWindow.HTMLElement;
     setup({ browseWindow });
+    expect(isMode("a")).toBe(false);
+    expect(isMode("b")).toBe(false);
+  });
+
+  it("Not set query params", () => {
+    setup(generateSetupParams(""));
+    expect(isMode("a")).toBe(false);
+    expect(isMode("b")).toBe(false);
+
+    setup(generateSetupParams("?"));
     expect(isMode("a")).toBe(false);
     expect(isMode("b")).toBe(false);
   });
