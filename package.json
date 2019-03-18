@@ -1,14 +1,14 @@
 {
   "name": "is-mode",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Provides branching using query parameters.",
   "keywords": [
     "balancing",
     "query parameter"
   ],
-  "homepage": "https://github.com/is-mode#readme",
+  "homepage": "https://github.com/Himenon/is-mode#readme",
   "bugs": {
-    "url": "https://github.com/is-mode/issues"
+    "url": "https://github.com/Himenon/is-mode/issues"
   },
   "repository": "is-mode",
   "license": "MIT",

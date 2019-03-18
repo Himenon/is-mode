@@ -40,7 +40,7 @@ isMode("abc") === true // true
 import { isMode } from "is-mode";
 
 // in server side
-isMode("abc") === false // true
+isMode("any-key") === false // always true
 ```
 
 ## Update
