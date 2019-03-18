@@ -1,6 +1,6 @@
 {
   "name": "is-mode",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Provides branching using query parameters.",
   "keywords": [
     "balancing",
@@ -47,7 +47,9 @@
     "version_up:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"chore(change-log): updated CHANGELOG.md\" && npm version minor",
     "version_up:patch": "changelog -p && git add CHANGELOG.md && git commit -m \"chore(change-log): updated CHANGELOG.md\" && npm version patch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ungap/url-search-params": "^0.1.2"
+  },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
